@@ -1,0 +1,407 @@
+/* CSS reset */
+* {
+    margin: 0;   
+    padding: 0;   
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    min-height: 100vh;     
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#333;
+
+}
+
+
+h1, h2, h3, h4{
+    font-family: 'Merriweather', serif;
+    color: #296674;
+}
+
+
+/* header section */
+header {
+    background-color: #BBE9F8;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #296674;
+    margin: 0;
+}
+
+/* navigation bar */
+nav {
+    background-color: #BBE9F8;
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+}
+
+
+
+nav ul {
+    margin: 0;
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #061A3E;   
+}
+
+/* main section */
+main ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome-text {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3rem;
+    color: #061A3E;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+main p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 12px;
+  
+}
+
+main h3 {
+    text-align: center;
+    color: #061A3E;
+    margin-top: 30px;
+}
+
+main ul {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.book-btn {
+    display: block;
+    margin: 30px auto 50px auto;  
+    background-color: #0C2340;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.book-btn:hover {
+  background-color: #6687c5; 
+}
+
+/* about page styling */
+#clinic, #staff {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.clinic-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.clinic-images img {
+    width: 48%;
+    border-radius: 6px;
+}
+
+.staff-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.staff-card {
+    width: 23%;
+    text-align: center;
+}
+
+.staff-card img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.staff-card h3{
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.staff-card p{
+font-size: 0.95rem;
+line-height: 1.45;
+max-width: 230px;
+margin: 0 auto;
+}
+
+/* service page styling */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.service-text, .service-image{
+    min-height: 300px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-text{
+    background-color: #ffffff;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+
+}
+
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* aricles page styling */
+
+.article{
+    width: 70%;
+    margin: 40px auto;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.article h3 {
+    margin-bottom: 20px;
+}
+
+.article p{
+    text-align:left;
+}
+
+.article ol {
+    padding-left: 50px;
+    margin: 20px 0;
+}
+
+.article ol li{
+    margin-bottom: 12px;
+
+}
+
+
+.article-image img {
+    display: block;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+.related-links {
+    width: 70%;
+    margin: 40px auto 60px auto;
+    text-align: left;
+}
+
+.related-links h3 {
+    margin-bottom: 15px;
+
+}
+
+.related-links ul {
+    padding-left: 20px;
+
+}
+
+.related-links ul li {
+    margin-bottom: 8px;
+}
+
+.action {    
+  font-size: 1em;     
+  color: #6687c5;     
+  font-weight: bold;        
+}
+
+
+
+/* contact page styling */
+
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+.tel-link {
+    background-color:#061A3E; 
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: inline-block;
+
+}
+
+
+
+/* footer section */
+footer {
+    background-color: #061A3E;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #A7D8DD;  
+    text-decoration: underline;
+}
+
+/* Font specifications */
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Media Query for Tablet Viewport */
+@media (max-width: 768px) {
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-image img,
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .article{
+        padding: 0 20px;
+    }
+}
+
+
+/* Media Query for Mobile Viewport */
+@media (max-width: 480px) {
+
+    header h1.logo {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    body, p, li {
+        font-size: 16px;
+    }
+
+    .article {
+        padding: 0 15px;
+    }
+}
