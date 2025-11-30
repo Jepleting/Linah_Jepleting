@@ -30,7 +30,151 @@
 
 
             <!-- Start of main section-->
-            <main>
+             <main>
+                <div id="contact">
+                    <h2>Ready to book an appointment? Contact us today</h2>
+
+                    <!-- free dental checkup promotion -->
+                    <section class="promo-section">
+                        <div class="promo-image">
+                            <img src="images/Advert.png" alt="Dentist promoting a free dental checkup">
+                        </div>
+
+                        <div class="promo-content">
+                            <h3>Free Dental Checkup - Saturday 5th July, from 9:00am</h3>
+                            <p>
+                                Are you ready to take the first step towards a healthier, brighter smile?
+                                100SMILES Dental Care is excited to offer a <strong>FREE dental checkup</strong> on
+                                <strong>Saturday, 5th July</strong> starting at <strong>9:00am</strong>!
+                                This is the perfect opportunity to make sure your dental health is in great shape
+                                at no cost.
+                            </p>
+
+                            <h4>How to Book Your Free Checkup</h4>
+                            <ul>
+                                <li><strong>Call us:</strong> Phone <strong>07 1327 5599</strong> to schedule your appointment.</li>
+                                <li><strong>Email us:</strong> Send an email to
+                                    <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a>
+                                    with your preferred time slot.
+                                </li>
+                                <li><strong>Visit us:</strong> Drop by our clinic at
+                                    <strong>195 Fantail Street, Cairnville, Queensland</strong> and our friendly
+                                    receptionist will assist you.
+                                </li>
+                            </ul>
+
+                            <h4>What to Expect During Your Free Checkup</h4>
+                            <ul>
+                                <li><strong>Free examination:</strong> A comprehensive check of your teeth and gums.</li>
+                                <li><strong>Advance booking clean-up:</strong> A professional clean to remove plaque and tartar.</li>
+                                <li><strong>Personalised advice:</strong> Tips on maintaining your oral health.</li>
+                                <li><strong>Treatment plan:</strong> If needed, we'll discuss the best options for your care.</li>
+                            </ul>
+
+                            <p class="promo-note">
+                                <strong>Limited slots available!</strong> Book your appointment today and take the first
+                                step towards a healthier smile.
+                            </p>
+
+                            <a href="#booking-form" class="book-btn">Book Your Free Checkup Online</a>
+                        </div>
+                    </section>
+
+                    <!-- Contact details -->
+                    <section class="contact-details">
+                        <h3>Contact Details</h3>
+
+                        <div class="tel-link">
+                            <a href="tel:+61750005599">Call us: 07 5000 5599</a>
+                        </div>
+
+                        <p>Fax: 07 4567 9999</p>
+                        <p>Email: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+                        <p>Address: 33 Fantail Street, Razole, Queensland.</p>
+
+                        <h4>Trading Hours</h4>
+                        <ul class="trading-hours">
+                            <li>Monday - Friday: 8:30am - 6:30pm</li>
+                            <li>Saturday - Sunday: 8:30am - 1:00pm</li>
+                        </ul>
+                    </section>
+
+                    <!-- Online booking form -->
+                    <section class="booking-section">
+                        <h2>Online Booking Form</h2>
+                        <p>
+                            Use our online booking form to request an appointment. Our friendly team will contact you to
+                            confirm your booking and final time.
+                        </p>
+
+                        <form id="booking-form" novalidate>
+                            <div class="form-row">
+                                <label for="fullName">Full Name<span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email Address<span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="phone">Phone Number<span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="date">Preferred Date<span class="required">*</span></label>
+                                <input type="date" id="date" name="date" required>
+                                <span class="error-message" id="date-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="time">Preferred Time<span class="required">*</span></label>
+                                <input type="time" id="time" name="time" required>
+                                <span class="error-message" id="time-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="appointmentType">Appointment Type<span class="required">*</span></label>
+                                <select id="appointmentType" name="appointmentType" required>
+                                    <option value="">Please select</option>
+                                    <option value="free-checkup">Free Dental Checkup</option>
+                                    <option value="checkup-clean">Check-up and Clean</option>
+                                    <option value="implants">Dental Implants</option>
+                                    <option value="orthodontics">Orthodontics</option>
+                                    <option value="cosmetic">Cosmetic Dentistry</option>
+                                    <option value="emergency">Emergency Appointment</option>
+                                </select>
+                                <span class="error-message" id="type-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <p>Is this your first visit to 100SMILES Dental Care?<span class="required">*</span></p>
+                                <label class="inline-label">
+                                    <input type="radio" name="firstVisit" value="yes" required> Yes
+                                </label>
+                                <label class="inline-label">
+                                    <input type="radio" name="firstVisit" value="no"> No
+                                </label>
+                                <span class="error-message" id="firstVisit-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="notes">Additional Notes</label>
+                                <textarea id="notes" name="notes" rows="4"
+                                    placeholder="Tell us anything else about your dental concerns or preferences."></textarea>
+                            </div>
+
+                            <button type="submit" class="book-btn">Submit Booking Request</button>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <!-- <main>
                 <div id="contact">
                     <h2>Ready to book an appointment ? Contact us today</h2>
 
@@ -44,13 +188,16 @@
 
                 </div>
                     
-            </main>
+            </main> -->
 
             <Footer><br>
                 <p>&copy; Copyright 2025. All Rights Reserved.</p>
                 <p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>          
             </Footer>
             </div>
+
+            <!-- form validation using javascript -->
+            <script src="script.js"></script>
     </body>
 
 
